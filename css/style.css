@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+body{
+    font-size: 63%;
+    background: #e6e6e6;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.5);
+    background: #fff;
+}
+.logo{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 900;
+}
+.logo i{
+    color: #ff7200;
+    margin-right: .6rem;
+    font-size: 2.5rem;
+}
+
+.header .navbar a{
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+    color: #000;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+}
+.header .navbar a:hover{
+    color: #ff7200;
+    border-right: 2px solid #ff7200;
+}
+.icons .fa{
+    margin: 0 0.2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 3px 2px 5px 1px #aaa;
+    cursor: pointer;
+    background: #fff;
+}
+.icons .fa:hover{
+    transition: .5s ease;
+    background: #ff7200;
+    color: #fff;
+    transform: scale(1.1);
+}
+.icons .fa-bars{
+    display: none;
+}
+
+/* section */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../image/banner-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+.home .content{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 50%;
+    margin: 10rem;
+}
+.home .content h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.home .content h3 span{
+    color: #ff7200;
+}
+.home .content .btn{
+    padding: 0.4rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    cursor:pointer;
+    border-radius: .5rem;
+    color: #fff;
+    background: #ff7200;
+    font-weight: 900;
+}
+.home .content .btn:hover{
+    background: green;
+    transition: .5s ease;
+}
+
+/* feature */
+.feature{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.heading{
+    font-size: 2.5rem;
+    margin: 1rem;
+    font-weight: 900;
+}
+.heading span{
+    color: #fff;
+    background: #ff7200;
+    padding:0rem 2.5rem;
+    clip-path: polygon(100% 0, 90% 48%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.feature .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 1.2rem
+}
+.feature .box-container .box{
+    box-shadow: 2px 4px 10px 1px #aaa;
+    padding: 2rem;
+}
+.feature .box-container .box img{
+    height: 14rem;
+    width: 100%;
+}
+.feature .box-container .box h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ff7200;
+}
+.feature .box-container .box p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.feature .box-container .box a{
+    font-size: 1rem;
+    margin-top: 1rem;
+    background: #ff7200;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 0.2rem 1rem;
+    border: 2px solid #ff7200;
+    cursor: pointer;
+}
+.feature .box-container .box a:hover{
+    background: none;
+    color: #ff7200;
+    transition: .4s ease-in;
+}
+.box{
+    background: #fff;
+}
+/* products */
+.products .box-container .box{
+    padding: 0.5rem;
+    
+}
+.products .box-container .box:hover{
+    padding: 0rem;
+}
+.products .border-box{
+    border: 1px solid #020257
+}
+.products .border-box:hover{
+    border: 3px solid #020257
+}
+.products .box .border-box h3{
+    color: #020257;
+}
+.products p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-top: .8rem;
+}
+.icon-stars{
+    font-size: 1.2rem;
+    color: #ff7200;
+}
+.products .btn, .blog .btn{
+    border: 2px solid #020257;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    background: none;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    font-weight: 600;
+    background: #020257;
+}
+.products .btn:hover, .blog .btn:hover{
+    background: none;
+    cursor: pointer;
+    transition: .5s linear;
+    color: #020257;
+}
+/* cart-container */
+.feature .cart-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .6rem;
+    width: 90%;
+}
+.feature .cart-container .cart{
+    border: 2px solid #ff7200;
+}
+.feature .cart-container .box{
+    padding: .9rem;
+}
+.feature .cart-container .box p{
+    font-weight: 600;
+    color: #646464;
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+}
+.feature .cart-container .box a:hover{
+    background: #fff;
+}
+/* custmer */
+.feature .box-container .box .customer{
+    padding: 1rem;
+}
+.feature .box-container .box .customer img{
+    border-radius: 50%;
+    width: 56%;
+    height: 160px;
+}
+/* blog */
+.blog .box-container .box{
+    padding: 0rem;
+    text-align: left;
+}
+.blog .box-container .box .description{
+    padding: 0 1rem 1rem 1rem;
+}
+.line{
+    background: #020257;
+    width: 90%;
+    height: 1px;
+    margin: auto
+}
+.blog .box-container .box .icon{
+    color: #ff7200;
+    font-weight: 600;
+    font-size: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.blog .box-container .box .icon .fa-calendar{
+    margin-left: 3.5rem
+}
+.blog .box-container .box label{
+    color: #020257;
+}
+.blog .box-container .box h3{
+    color: #020257;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.apollo{
+    position: fixed;
+    background: url(../image/apollo.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    right: 2rem;
+    top: 30rem;
+    box-shadow: 2px 1px 6px 1px #aaa;
+}
+.apollo:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+/* footer */
+.footer{
+    font-size: 1rem;
+    text-align: center;
+    background: #fff;
+    padding: 1rem 0;
+}
+.footer .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: 2rem auto;
+
+}
+
+.footer .grid-container .grid {
+    text-align: left;
+    line-height: 2.4rem;
+}
+.footer .grid-container .grid span{
+    font-weight: 600;
+}
+.footer .grid-container .grid a{
+    color: #000;
+}.footer .grid-container .grid a:hover{
+    color: #ff7200
+}
+.footer .grid-container .grid i{
+    color: #ff7200;
+    font-size: 1.1rem;
+}
+.footer .grid-container .grid h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.footer .grid-container .grid input{
+    padding: .5rem;
+    width: 100%;
+    font-size: 1rem;
+    background: #eee;
+    margin-bottom: 1.4rem;
+}
+.footer .grid-container .grid .btn{
+    padding: .4rem 2rem;
+    background: none;
+    color: #020257;
+    border: 2px #020257 solid;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.footer .grid-container .grid .btn:hover{
+    background: #020257;
+    transition: .5s;
+    color: #fff;
+}
+.text{
+    color: #000;
+    font-weight: 600;
+}
+.footer .line{
+    margin: 1.5rem;
+    margin: auto;
+    width: 80%;
+}
+.ending-p{
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ending-p span{
+    color: #ff7200;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media(max-width: 1240px){
+    body{
+        font-size: 63%;
+    }
+    .header .navbar a{
+        display: none;
+    }
+    .header .logo span{
+        display: none;
+    }
+    .home .content{
+        font-size: 1rem;
+        width: 60%;
+        margin: 5rem;
+    }
+    .header .icons .fa-bars{
+        display: initial;
+    }
+    .feature .box-container{
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+    }
+    .heading{
+        font-size: 1.8rem;
+    }
+    .apollo{
+        height: 3rem;
+        width: 3rem;
+        right: 1rem;
+    }
+    .footer .grid-container{
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+    }
+}
+
+@media(max-width: 740px){
+    body{
+        font-size: 56%;
+    }
+    .home .content{
+        font-size: 1rem;
+        margin: 3rem 1rem;
+        width: 80%;
+    }
+    .home .content h3{
+        font-size: 2rem;
+    }
+    .feature .box-container{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
